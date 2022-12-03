@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Landing Page</title>
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -18,22 +21,38 @@
             <a href="#" class="logo">
                 <img src="assets/images/logo-light.svg" alt="">
             </a>
-            <div class="navbar-nav">
-                <ul class="nav-items">
-                    <li><a href="#home" class="nav-item">Home</a></li>
-                    <li><a href="#about" class="nav-item">About</a></li>
-                    <li><a href="#services" class="nav-item">Services</a></li>
-                    <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
-                    <li><a href="#team" class="nav-item">Team</a></li>
-                    <li><a href="#blog" class="nav-item">Blog</a></li>
-                    <li><a href="#contact" class="nav-item">Contact</a></li>
-                </ul>
-            </div>
+            <ul class="nav-items">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#services" class="nav-item">Services</a></li>
+                <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+                <li><a href="#team" class="nav-item">Team</a></li>
+                <li><a href="#blog" class="nav-item">Blog</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
             <div class="nav-toggler"><i class="ri-menu-fill"></i></div>
         </div>
     </nav>
-    <!-- HERO -->
 
+    <!-- HERO -->
+    <div class="owl-carousel owl-theme hero-slider">
+        <div class="slide">
+            <div class="container">
+                <h1 class="h1">Aqui é o primeiro slide</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum harum ullam maxime molestias fugit blanditiis nemo, ipsa itaque libero fuga neque recusandae at quaerat nesciunt alias! Placeat et suscipit architecto!</p>
+                <a href="#" class="btn">Get Started</a>
+                <a href="#" class="btn btn-outline-light">Contact Us</a>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="container">
+                <h1 class="h1">Aqui é o segundo slide</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum harum ullam maxime molestias fugit blanditiis nemo, ipsa itaque libero fuga neque recusandae at quaerat nesciunt alias! Placeat et suscipit architecto!</p>
+                <a href="#" class="btn">Get Started</a>
+                <a href="#" class="btn btn-outline-light">Contact Us</a>
+            </div>
+        </div>
+    </div>
     <!-- ABOUT -->
 
     <!-- SERVICES -->
