@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 
 }
 
@@ -14,6 +15,7 @@ body {
     color: #777;
     line-height: 1.8;
     font-size: 1rem;
+    /* background-color: #e9e9e9; */
 }
 
 h1,
@@ -46,6 +48,12 @@ h6 {
 
 .h5 {
     font-size: 18px;
+}
+
+.intro-text {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    text-align: center;
 }
 
 a {
@@ -107,6 +115,56 @@ section {
 
 .owl-theme .owl-dots .owl-dot.active span {
     background-color: #b3040d;
+}
+
+.hover-effect {
+    transition: all 0.4s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*Quantidade de colunas*/
+    gap: 24px;
+    /* Espaço entre as colunas */
+    align-items: center;
+    /* ajusta o centro das duas colunas */
+}
+
+@media (max-width: 992px) {
+    .two-col-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.three-col-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*Usei shord handQuantidade de colunas: 1fr 1fr 1fr*/
+    gap: 24px;
+    /* Espaço entre as colunas */
+    align-items: center;
+    /* ajusta o centro das duas colunas */
+}
+
+@media (max-width: 992px) {
+    .three-col-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .three-col-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ==========  NAVBAR ==========  */
@@ -295,7 +353,7 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     transition: all 0.3 ease;
     margin: 4px;
 }
@@ -303,6 +361,7 @@ section {
 .btn:hover {
     color: #fff;
     transform: translateY(3px);
+    box-shadow: none;
 }
 
 .btn-outline-light {
@@ -315,13 +374,89 @@ section {
     color: #222;
 }
 
-
-/* ==========  ABOUT ==========  */
-
-
 /* ==========  SERVICES ==========  */
 
+.service {
+    padding: 24px;
+    text-align: center;
+}
+
+.service h3 {
+    margin-top: 16px;
+}
+
+.icon-box {
+    font-size: 54px;
+    color: #b3040d;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.icon-box::after {
+    content: " ";
+    position: absolute;
+    top: 44%;
+    left: 38%;
+    z-index: -1;
+    background: linear-gradient(rgba(180, 4, 12, 0.7), rgba(180, 4, 12, 0.185));
+    width: 40px;
+    height: 40px;
+}
+
 /* ==========  PORTFOLIO ==========  */
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    height: 100%;
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .45s ease;
+    color: #c4c4c4;
+}
+
+.portfolio-item .h4 {
+    color: #fff;
+}
+
+.portfolio-item:hover .overlay {
+    left: 0;
+}
+
+.portfolio-btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b3040d;
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    transition: all 0.4s ease;
+}
+
+.portfolio-btn:hover {
+    transform: rotate(45deg);
+    color: rgb(184, 184, 184);
+}
 
 /* ==========  TEAM ==========  */
 
