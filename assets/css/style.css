@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 
 }
 
@@ -59,6 +59,7 @@ h6 {
 a {
     text-decoration: none;
     transition: all 0.4s ease;
+    color: #000;
 }
 
 a:hover {
@@ -119,11 +120,13 @@ section {
 
 .hover-effect {
     transition: all 0.4s ease;
+    border-bottom: 3px solid transparent;
 }
 
 .hover-effect:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-bottom-color: #b3040d;
 }
 
 .two-col-grid {
@@ -162,6 +165,30 @@ section {
 
 @media (max-width: 560px) {
     .three-col-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.four-col-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*Usei shord handQuantidade de colunas: 1fr 1fr 1fr*/
+    gap: 24px;
+    /* Espaço entre as colunas */
+    align-items: center;
+    /* ajusta o centro das duas colunas */
+}
+
+@media (max-width: 992px) {
+    .four-col-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .four-col-grid {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -460,8 +487,103 @@ section {
 
 /* ==========  TEAM ==========  */
 
+
+.team-member .content {
+    padding: 16px;
+    text-align: center;
+}
+
 /* ==========  REVIEWS ==========  */
+
+.review {
+    padding: 24px;
+    position: relative;
+}
+
+.review .quote {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 140px;
+    opacity: .2;
+}
+
+.review .stars {
+    color: #b3040d;
+}
+
+.review p {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+.review .person {
+    display: flex;
+    align-items: center;
+}
+
+.review .person img {
+    width: 70px;
+    margin-right: 18px;
+}
+
+.review .person .h5 {
+    margin-bottom: 6px;
+} 
+
+.review .person p {
+    margin: 0;
+}
 
 /* ==========  BLOG ==========  */
 
+.blog-post .content {
+    padding: 24px;
+}
+
+.blog-post .content .btn {
+    padding: 8px 18px;
+}
+
 /* ==========  CONTACT ==========  */
+
+.contact-info {
+    text-align: center;
+    padding: 24px;
+}
+
+.form {
+    width: 100%;
+    padding: 60px;
+    margin-top: 40px;
+}
+
+.form-group, 
+.form-control {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    display: inline-block;
+}
+.form-control {
+    background-color: rgb(219, 219, 219);
+    border: 1px solid transparent;
+    font-family: "Poppins";
+    padding: 16px;
+    font-size: 12px;
+}
+
+.form-control:focus {
+    outline: 0;
+    border-color: #b3040d;
+}
+
+button.btn {
+    font-family: "Poppins";
+}
+
+.google-map {
+    width: 100%;
+    min-height: 400px;
+}
