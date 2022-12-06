@@ -2,7 +2,7 @@
 
 Web page of a fictitious digital services agency.
 
-It has the sections: HOME ABOUT SERVICES PORTFOLIO TEAM BLOG CONTACT
+It has the sections: HOME, ABOUT, SERVICES, PORTFOLIO, TEAM, BLOG, CONTACT
 
 By clicking on the Menu options, you are directed to the given section on the page.
 
