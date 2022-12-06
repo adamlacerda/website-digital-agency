@@ -15,3 +15,5 @@ Ao clicar nas opções do Menu, é direcionado para a seção determinada na pá
 OWl Carousel via cdn e jQuery.
 
 Estilo no CSS puro
+
+Ficou lindamente responsivo!
