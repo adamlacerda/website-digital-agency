@@ -50,6 +50,21 @@ h6 {
     font-size: 18px;
 }
 
+@media(max-width: 600px) {
+    .h1 {
+        font-size: 38px;
+    }
+    .h2 {
+        font-size: 32px;
+    }
+    .h3 {
+        font-size: 24px;
+    }
+    .h4 {
+        font-size: 20px;
+    }
+}
+
 .intro-text {
     max-width: 600px;
     margin: 0 auto 40px auto;
@@ -557,6 +572,12 @@ section {
     margin-top: 40px;
 }
 
+@media(max-width: 768px) {
+    .form {
+        padding: 24px;
+    }
+}
+
 .form-group, 
 .form-control {
     width: 100%;
@@ -567,7 +588,7 @@ section {
     display: inline-block;
 }
 .form-control {
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(233, 233, 233);
     border: 1px solid transparent;
     font-family: "Poppins";
     padding: 16px;
@@ -587,3 +608,40 @@ button.btn {
     width: 100%;
     min-height: 400px;
 }
+
+/* FOOTER */
+
+.footer-top {
+    background-color: #222;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-top .h4 {
+    color: #fff
+}
+
+.footer-top a {
+    color: #777;
+}
+
+.footer-top a:hover {
+    color: #fff;
+}
+.footer-top img {
+    width: unset;
+}
+
+.footer-bottom {
+    background-color: #111;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+}
+
+
